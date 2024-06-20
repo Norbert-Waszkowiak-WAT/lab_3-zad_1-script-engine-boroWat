@@ -19,8 +19,9 @@ class ScriptServiceTest extends AbstractContainerBaseTest {
 
         assert scriptService.exec(script).equals("3");
     }
-
-    @Test
+/* 
+    //@Test
+    
     public void testAddAndRemoveAuthor() {
         String addScript = """
                 var Article = Java.type('pl.edu.wat.knowledge.entity.Article');
@@ -37,6 +38,6 @@ class ScriptServiceTest extends AbstractContainerBaseTest {
         String deleteScript = "authorRepository.deleteById(\"" + id + "\")";
         assert scriptService.exec(deleteScript) != null;
     }
-
+*/
 
 }

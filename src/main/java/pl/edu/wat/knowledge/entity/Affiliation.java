@@ -1,20 +1,21 @@
+
 package pl.edu.wat.knowledge.entity;
 
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
-import java.util.List;
+import org.springframework.lang.Nullable;
 
 @Data
-public class Author {
+public class Affiliation{
     @MongoId
     private String id;
-
-    private String surname;
     private String name;
-    private Integer score;
 
+    @Nullable
     @DBRef
-    private Affiliation affiliation;
+    private Affiliation parent;
+
+    
 }
