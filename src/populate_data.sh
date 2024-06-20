@@ -1,7 +1,7 @@
 #!/bin/bash
 
 API_URL="https://fuzzy-telegram-jx7jjvxjjrpf5wrw-8080.app.github.dev/api"
-AUTH_TOKEN="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"
+#AUTH_TOKEN="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"
 
 declare -a AFFILIATION_IDS
 declare -a AUTHOR_IDS
